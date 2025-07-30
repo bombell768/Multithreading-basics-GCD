@@ -16,6 +16,7 @@ class NSOperationQueueTests {
             for _ in 0..<1000000 {
                 // do nothing
             }
+//            sleep(5)
             print("Operation \"A\" finished")
         }
         

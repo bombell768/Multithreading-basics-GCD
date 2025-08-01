@@ -13,14 +13,14 @@ func executeTasks() {
 
     let group = DispatchGroup()
     
-    group.enter()
     queue1.async {
+        group.enter()
         executeTask(1, delay: 2)
         group.leave()
     }
 
-    group.enter()
     queue2.async {
+        group.enter()
         executeTask(2, delay: 3)
         group.leave()
     }
